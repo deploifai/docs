@@ -40,7 +40,7 @@ function Content() {
         </p>
       </div>
       <div className={clsx(styles.titlesection)}>
-        <h2>We don't care about the ML framework you use</h2>
+        <h2>Use a ML framework no one else uses?</h2>
         <p>
           We will look at your requirements and figure out how to setup things
           on your server! You really dont need to do any additional work.
