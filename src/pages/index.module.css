@@ -5,8 +5,11 @@
  * and scoped locally.
  */
 
+.hero {
+  padding: 4rem;
+}
+
 .heroBanner {
-  padding: 4rem 0;
   text-align: center;
   position: relative;
   overflow: hidden;
@@ -22,4 +25,22 @@
   display: flex;
   align-items: center;
   justify-content: center;
+}
+
+.buttons a {
+  margin: 0px 1rem;
+}
+
+.titlesection {
+  padding: 4rem;
+  max-width: 60rem;
+  margin: auto;
+}
+
+.titlesection > h2 {
+  font-size: xx-large;
+}
+
+.titlesection > p {
+  font-size: x-large;
 }
