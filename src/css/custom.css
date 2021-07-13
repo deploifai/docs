@@ -5,17 +5,6 @@
  * work well for content-centric websites.
  */
 
-@font-face {
-  font-family: "Plus Jakarta Sans";
-  src: url("/static/fonts/PlusJakartaSans-Regular.ttf") format("ttf");
-  font-weight: 400;
-  font-style: normal;
-}
-
-:root {
-  --ifm-font-family-base: "Plus Jakarta Sans";
-}
-
 /* You can override the default Infima variables here. */
 :root {
   --ifm-color-primary: #556683;

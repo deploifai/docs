@@ -1,10 +1,9 @@
 ---
-sidebar_position: 1
 id: quickstart
 title: Quickstart
 ---
 
-In this page, you will learn how to **zip your project** (essentially your directory of models, and scripts), **create an application on Deploifai** and **make requests to your endpoint**. This is intended to be a _hello world_ guide. Our other guides cover how to [set up, and configure your application](setting-up).
+In this page, you will learn how to **zip your project** (essentially your directory of models, and scripts), **create an application on Deploifai** and **make requests to your endpoint**. This is intended to be a _hello world_ guide. Our other guides cover how to [set up, and configure your application](./setting-up/predict.md).
 
 ## Prerequisities
 
@@ -35,7 +34,7 @@ Make sure to upload the generated `objectdetection.zip` file.
 
 For our `objectdetection` project, the input type should be `strings(sentences)`.
 
-You can find out more information about various input types [here](../application/input-types).
+You can find out more information about various input types soon.
 
 Confirm application creation, and watch the deploy happen!
 
