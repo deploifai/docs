@@ -8,7 +8,7 @@ import useBaseUrl from '@docusaurus/useBaseUrl';
 
 ## Directory structure for your app
 
-The [object detection example](https://github.com/deploifai/examples) has the folowing directory structure:
+The [object detection example](https://github.com/deploifai/examples/tree/main/objectdetection) has the folowing directory structure:
 
 ```bash
 objectdetection
