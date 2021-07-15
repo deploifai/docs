@@ -36,3 +36,7 @@ Click on `Users` in the IAM resources section. It will take you to the IAM users
 Once you have created the user, you will go to a confirmation page with the details of the user. Copy the **access keys** and **secret key** to use in Deploifai. Make sure to copy it somewhere safe so that you can access it later.
 
 <img alt="Give admin permissions" src={useBaseUrl('/img/docs/user_creds.png')} />
+
+### Next Steps
+
+Learn how to add your generated keys to Deploifai [here](./overview.md#add-a-profile-to-deploifai).
