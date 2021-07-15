@@ -45,6 +45,8 @@ The `input` field from the HTTP request body will be available as the argument.
 }
 ```
 
+See [here](../api/input) for more details on the input specs.
+
 ### Return value
 
 The return value of the predict function is used as the HTTP response for the endpoint.
@@ -58,3 +60,5 @@ The HTTP response from the above Python sample will be as follows:
   "output": [1, 2, 3]
 }
 ```
+
+See [here](../api/output) for more details on the output specs.

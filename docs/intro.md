@@ -1,34 +1,15 @@
 ---
 sidebar_position: 1
+title: Introduction
 ---
 
-import useBaseUrl from '@docusaurus/useBaseUrl';
+# Introduction
 
-# Overview
+Deploifai is an MLOps solution that lets you deploy Machine Learning models with ease. We handle the development of the API, and the infrastructure so that you can focus on what matters most to you: your ML model.
 
-## Model deployment
+## Getting Started
 
-Learn how the complete process of deployment works in Deploifai.
+To learn how to use Deploifai, we recommend you check out one of the following guides.
 
-### Setup
-
-You have to provide 3 things in order to make a deployment using Deploifai:
-
-1. Model weights and configurations
-2. A python function for running a task
-3. Requirement files for the python environment
-
-See more details here.
-
-### Upload
-
-Compress your files into a ZIP package and upload into Deploifai application.
-<img alt="model upload" src={useBaseUrl('/img/docs/Upload.png')} />
-
-Follow the steps along to connect your cloud profile and deployment configurations.
-
-### Get the inference endpoint
-
-After application deployment, the application page will have information about your inference endpoint, cloud service resource details and a playground for experimenting with your inference server.
-
-<img alt="application page" src={useBaseUrl('/img/docs/Application.png')} />
+- [Quickstart](./getting-started/quickstart) - for a quick introduction to Deploifai using one of our example ML models
+- [Use Deplofai in an existing project](./getting-started/existing-project) - for instructions to use Deploifai in an existing project
