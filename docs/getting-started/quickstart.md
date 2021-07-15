@@ -87,13 +87,15 @@ Feel free to play around with the `"input"` to get different responses!
 
 ## Delete your application
 
-As a final step, you should destroy your application because it will be incuriing cloud service costs very quickly.
+#### IMPORTANT: As a final step, you should destroy your application because it will be incurring cloud service costs very quickly.
 
 Navigate to the application page, and click on the `Actions` dropdown.
 
 <img alt="Delete app" src={useBaseUrl('/img/docs/delete_app.png')} />
 
 Click `Delete`.
+
+You should grab another cup of coffee and wait for the deletion to finish.
 
 ## Next steps
 
