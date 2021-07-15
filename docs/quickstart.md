@@ -1,9 +1,12 @@
 ---
 id: quickstart
 title: Quickstart
+sidebar_position: 2
 ---
 
-In this page, you will learn how to **zip your project** (essentially your directory of models, and scripts), **create an application on Deploifai** and **make requests to your endpoint**. This is intended to be a _hello world_ guide. Our other guides cover how to [set up, and configure your application](./setting-up/predict.md).
+In this page, you will learn how to **zip your project** (essentially your directory of models, and scripts), **create an application on Deploifai** and **make requests to your endpoint**.
+
+This is intended to be a _hello world_ guide.
 
 ## Prerequisities
 
@@ -11,7 +14,7 @@ Open your terminal and use the following command to download the starter project
 
 ```sh
 curl -L https://api.github.com/repos/deploifai/examples/tarball/main | \
-  tar --strip=1 -xz deploifai-examples-0486075/objectdetection
+  tar --strip=1 -xz deploifai-examples-0486075/goemotions
 ```
 
 ## Zip your project
@@ -19,7 +22,7 @@ curl -L https://api.github.com/repos/deploifai/examples/tarball/main | \
 Use the `zip` CLI to zip the project.
 
 ```sh
-zip -r -j objectdetection.zip objectdetection
+zip -r -j goemotions.zip goemotions
 ```
 
 The zip file will be uploaded to Deploifai later.
@@ -30,11 +33,21 @@ Navigate to your <a href="https://deploif.ai/dashboard" target="_blank">dashboar
 
 Follow the guided steps in the application creation workflow.
 
-Make sure to upload the generated `objectdetection.zip` file.
+### Model Upload
 
-For our `objectdetection` project, the input type should be `strings(sentences)`.
+Make sure to upload the generated `goemotions.zip` file.
 
-You can find out more information about various input types soon.
+### Cloud Profile
+
+**At the moment, we only support deployments on AWS.**
+
+You need to prepare access keys for the chose cloud provider.
+
+Please see [this guide](./creation/cloud-profile/overview.md) to generate the access keys.
+
+### Deployment size
+
+Choose a deployment size ranging from **Small** to **Large**.
 
 Confirm application creation, and watch the deploy happen!
 
@@ -45,7 +58,7 @@ Once your application has been successfully deployed, you can start sending http
 The endpoint should look something like this:
 
 ```
-https://models.deploif.ai/{application_id}/predict
+http://{application_id}.amazonaws.com/predict
 ```
 
 The `application_id` is an id unique to your application.
@@ -55,8 +68,8 @@ Now, it's time to test your endpoint.
 Send a post request, and see the response.
 
 ```sh
-curl -X POST -H "Content-Type: application/json" -d '{"input":"sentence"}' \
-  https://models.deploif.ai/{application_id}/predict
+curl -X POST -H "Content-Type: application/json" -d '{"input":"Deploifai is awesome!", "input_type": "str"}' \
+  http://{application_id}.amazonaws.com/predict
 ```
 
 The response should comeback as an `application/json` content type as well.
@@ -67,4 +80,4 @@ Feel free to play around with the `"input"` to get different responses!
 
 This section lists a number of potential next steps you can now take from here. Please feel free to explore these.
 
-TBC.
+[Setting up a prediction function](./setting-up/predict.md)
