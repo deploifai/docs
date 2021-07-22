@@ -9,9 +9,8 @@ module.exports = {
   favicon: "img/favicon.png",
   organizationName: "deploifai", // Usually your GitHub org/user name.
   projectName: "deploifai", // Usually your repo name.
-  plugins: ["@docusaurus/plugin-google-gtag"],
   themeConfig: {
-    googleAnalytics: {
+    gtag: {
       trackingID: "G-C51CVBWDD5",
     },
     navbar: {
