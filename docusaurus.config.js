@@ -18,6 +18,8 @@ module.exports = {
       logo: {
         alt: "Deploifai Logo",
         src: "img/logo.svg",
+        href: "https://deploif.ai",
+        target: "_self",
       },
       items: [
         {
