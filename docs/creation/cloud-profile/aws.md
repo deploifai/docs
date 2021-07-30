@@ -1,11 +1,12 @@
 ---
+sidebar_position: 2
 id: aws
 title: AWS
 ---
 
 import useBaseUrl from '@docusaurus/useBaseUrl';
 
-AWS allows creation of IAM credentials for your account. In order to create a cloud profile, you need to create an IAM user with the correct permissions. To simplify things, we create an IAM credential with Admin permissions. The detailed list of permissions will be coming soon.
+AWS allows the creation of IAM credentials for your account. In order to create a cloud profile, you need to create an IAM user with the correct permissions. To simplify things, we create an IAM credential with Admin permissions. The detailed list of permissions will be coming soon.
 
 ### Sign in to AWS and go to IAM Management
 
